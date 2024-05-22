@@ -1,0 +1,26 @@
+/* Variables */
+
+:root {
+  // Fonts
+  --font-family: "Golos Text", sans-serif;
+  --second-family: "Merriweather", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+
+  --color-black: "#313131";
+
+  // Properties
+  --transition: 0.3s ease-out;
+
+  // Sizes
+  --body-font-size: 20px;
+  --body-font-wight: 400;
+  --body-line-height: 120%;
+}
+
+@mixin body {
+  font-family: var(--font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-wight);
+  line-height: var(--body-line-height);
+  color: var(--color-black);
+}

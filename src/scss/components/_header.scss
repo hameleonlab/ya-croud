@@ -1,0 +1,103 @@
+.header {
+    padding-top: 26px;
+    padding-bottom: 130px;
+    background: url(../img/hero-bg.jpg) center no-repeat;
+
+    // .header__top
+    &__top {
+        margin-bottom: 62px;
+    }
+    // .header__logo
+    &__logo {
+
+        img {
+            display: block;
+            height: 100%;
+        }
+    }
+    // .header__main
+    &__main {
+        max-width: 542px;
+    }
+    // .header__title
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 110%;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+    // .header__title-part
+    &__title-part {
+        display: inline-block;
+        text-align: center;
+
+        span {
+            padding-left: 35px;
+        }
+    }
+    // .header__desc
+    &__desc {
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    // .header__actions
+    &__actions {
+        display: flex;
+        gap: 16px;
+
+        & > * {
+            flex: 0 0 calc((100% - 16px) / 2);
+        }
+    }
+
+    @media (max-width: 1160px) {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__main {
+            max-width: 350px;
+        }
+
+        &__actions {
+            flex-direction: column;
+            gap: 14px;
+    
+            & > * {
+                flex: initial;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__logo {
+            height: 32px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        padding-top: 18px;
+        padding-bottom: calc(291px + 38px);
+        margin-bottom: -38px;
+        background: url(../img/hero-mobile-bg.png) center bottom no-repeat;
+        background-size: cover;
+
+        &__top {
+            margin-bottom: 40px;
+        }
+
+        &__main {
+            max-width: initial;
+        }
+
+        &__desc {
+            text-align: left;
+            margin-bottom: 32px;
+        }
+    }
+}
+

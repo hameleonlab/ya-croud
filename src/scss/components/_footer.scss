@@ -1,0 +1,16 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 72px;
+    background: #e9ded4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+
+    .container {
+        opacity: 0.6;
+    }
+
+    @media (max-width: 768px) {
+        padding-bottom: 60px;
+    }
+}

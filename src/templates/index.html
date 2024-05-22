@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("base/_head.html", {
+"title": "Главная страница сайта"
+})
+
+<body class="page">
+  <div class="page__wrapper">
+
+    @@include("components/_header.html")
+    @@include("components/_ticker.html")
+    <main class="main">
+
+      @@include("components/_support.html")
+      @@include("components/_stages.html")
+      @@include("components/_participants.html")
+
+
+    </main>
+
+    @@include("components/_ticker.html")
+    @@include("components/_footer.html")
+
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
